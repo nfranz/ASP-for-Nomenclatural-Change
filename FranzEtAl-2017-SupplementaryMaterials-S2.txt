@@ -1,0 +1,23 @@
+Franz N.M., Zhang C., Lee J. 2017. A logic approach to modeling nomenclatural change.
+Manuscript in press with Cladistics.
+Supplementary Materials S2: Instructions to run the “20 nomenclatural taxon use case”.
+
+1. Ensure that the Java Platform (Java Runtime Enviroment; capable of executing .jar [Java Archive] file formats) is properly installed; see http://www.oracle.com/technetwork/java/javase/overview/index.html [optional if visualization is not needed]
+
+2. Create a directory (e.g., "ASP-Nomenclature), and place the clingo code (Supplementary Materials S1) and .jar file (Supplementary Materials S2) into this directory.
+
+3. Install clingo, version 3.0.5, into the new directory. Software available at https://sourceforge.net/projects/potassco/files/clingo/3.0.5/
+
+4. Install GraphViz, version 1.0. Software available at http://www.graphviz.org/Download.php
+
+5. Open a command line interface terminal (CLI).
+
+6. Enter in ClI: cd ~ /ASP-Nomenclature/
+
+7. To obtain the textual clingo output in the CLI, enter: ./clingo FranzEtAl-2016-SupplementaryMaterials-S1.txt 0
+
+8. To obtain the output visualizations as GraphViz .dot files, enter: ./clingo FranzEtAl-2016-SupplementaryMaterials-S1.txt 0 | java -jar FranzEtAl-2016-SupplementaryMaterials-S4.jar
+
+9. To convert the .dot files (step 8) into .png files, enter: dot *.dot -Tpng -O
+
+10. Outputs from steps 8 and 9 are placed in the "ASP-Nomenclature" directory.
